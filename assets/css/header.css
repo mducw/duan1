@@ -1,0 +1,184 @@
+/* Header User*/
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #f22726;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 70px;
+    padding: 0 40px;
+}
+.header > .navigation-bar {
+    margin: auto;
+    display: flex;
+    position: relative;
+    padding: 0 15px;
+    min-width: 1000px;
+    max-width: 1147px;
+    width: calc(100% - 168px * 2);
+}
+.header .logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100px;
+}
+.header .search-input {
+    position: relative;
+}
+.header .search-input .icon-search {
+    position: absolute;
+    left: 15px;
+    top: 43%;
+    transform: translateY(-50%);
+}
+.header .search-input input {
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 13px;
+    height: 34px;
+    line-height: 34px;
+    outline: 0;
+    width: 100%;
+    padding: 0 20px 0 50px;
+    min-width: 300px;
+}
+.header .user {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.header .user .download-app-button {
+    position: relative;
+    padding: 8px 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-right: 20px;
+    color: red;
+    font-weight: 700;
+    background: #fff;
+    cursor: pointer;
+}
+.header .user .download-app-button:hover .phone-hover {
+    display: block;
+    cursor: default;
+}
+
+
+.phone-hover {
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    display: none;
+    width: 230px;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+.phone-hover::before {
+    content: "";
+    width: 280px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+.phone-hover::after {
+    width: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -97px;
+    top: -19px;
+    margin: 0 auto;
+}
+.phone-hover::after,
+.user-action-modal::before {
+    height: 0;
+    content: "";
+}
+.phone-hover-text {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    color: black;
+    font-weight: normal;
+}
+.phone-hover-text span:first-child {
+    margin-bottom: 5px;
+}
+.n-btn {
+    background: 0 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    outline: 0;
+    text-align: center;
+    font-size: 14px;
+    z-index: 1;
+}
+.header .user .phone img {
+    width: 30px;
+    height: 30px;
+}
+.header .user .action {
+    margin-right: 15px;
+}
+.header .user .hotline.view-city,
+.header .user .hotline.login {
+    cursor: pointer;
+}
+.header .user .hotline.view-city {
+    padding: 0 37px 0 17px;
+}
+.header .user .hotline {
+    border: 1px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    height: 38px;
+    line-height: 39px;
+    position: relative;
+    padding-left: 45px;
+    padding-right: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 175px;
+}
+.header .user .hotline .icon.toggle {
+    right: 15px;
+    left: unset;
+}
+.header .user .hotline .icon {
+    left: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.user-name a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+/* Setup toast */
+.toast-top-right {
+    top: 90px !important;
+}
+.toast-message{
+    font-size: 14px !important;
+    margin-top: 6px !important;
+}
+.user-name{
+    text-decoration: none;
+    color: #fff;
+}

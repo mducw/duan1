@@ -1,0 +1,50 @@
+.checkout-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.checkout-page-form{
+    width: 100%;
+}
+.order-title{
+    padding-bottom: 8px;
+}
+.order-content{
+    width: 535px !important;
+}
+.order-form .item-cart-product{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #dddddd;
+}
+.item-name-order{
+    width: 240px;
+    text-align: left;
+}
+.item-quantity-order{
+    width: 20px;
+    text-align: left;
+}
+.item-price-order{
+    width: 72px;
+    text-align: right;
+}
+.item-image-order img{
+    object-fit: cover;
+}
+/* Pay methods */
+.radio-list .radio-item label{
+    font-weight: 500;
+}
+.title-pay-method{
+    margin: 15px 0 8px;
+}
+.content-thanks{
+    
+    max-width: 900px;
+    margin: 10px auto;
+    line-height: 30px;
+    text-align: justify;
+}

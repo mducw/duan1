@@ -1,0 +1,10 @@
+/* Footer User */
+.footer {
+    background: url("https://res.cloudinary.com/do9rcgv5s/image/upload/v1692144184/qgbkcsydg2vwqcosx4ns.png")
+        no-repeat top;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding-top: 100px;
+    margin-top: 30px;
+}

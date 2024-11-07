@@ -1,0 +1,237 @@
+.container_login {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box_login {
+    border: 1px solid rgb(176, 176, 176);
+    margin: 5% 0;
+    width: 600px;
+    height: 440px;
+}
+
+.title_login {
+    display: flex;
+    justify-content: center;
+}
+
+.title_login a {
+    width: 50%;
+    height: 40px;
+}
+
+a .box_dangnhap {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px rgb(0, 123, 255) solid;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+}
+
+a .box_dangky {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    border-bottom: 2px rgb(220, 221, 222) solid;
+}
+
+.box_dangky:hover {
+    border-bottom: 2px rgb(0, 123, 255) solid;
+}
+
+.formtaikhoan {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.formtaikhoan form {
+    width: 95%;
+    text-align: center;
+}
+
+
+.login_user{
+    margin: 5px 0;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px rgb(220, 221, 222) solid;
+}
+
+.username:focus,
+.password:focus {
+    outline: 2px solid #0093e9;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.button_submit {
+    margin-top: 10px;
+    display: flex;
+    width: 130px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    background: -webkit-linear-gradient(top, #fd6e1d, #f22726);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.user-foot {
+    margin-top: 40px;
+}
+
+.user-foot .clearfix {
+    margin: 10px 0;
+
+}
+
+.user-foot a {
+    text-decoration: none;
+    color: blue;
+}
+
+.loginwith {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-foot li {
+    list-style: none;
+}
+
+.loginFb {
+    width: 275px;
+    background: #3b5998;
+    display: inline-block;
+    height: 50px;
+}
+
+.loginGg {
+    width: 250px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    margin: 0 0 23px 20px;
+    height: 50px;
+}
+
+.loginFb a,
+.loginGg a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+.loginGg span {
+    border-right: 1px solid #646668;
+}
+
+.loginFb span,
+.loginGg span {
+
+    float: left;
+    width: 50px;
+    height: 100%;
+    font-size: 37px;
+    color: #fff;
+    border-right: 1px solid #15416f;
+    display: block;
+    margin: 5px 0;
+
+}
+
+.loginFb span, .loginGg span {
+    height: 40px;
+}
+
+/* Form đăng ký */
+.box_login2 {
+    border: 1px solid rgb(176, 176, 176);
+    margin: 5% 0;
+    width: 600px;
+    height: 350px;
+}
+
+a .box_dangky2 {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px rgb(0, 123, 255) solid;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+}
+
+a .box_dangnhap2 {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    border-bottom: 2px rgb(220, 221, 222) solid;
+}
+
+.box_dangnhap2:hover {
+    border-bottom: 2px rgb(0, 123, 255) solid;
+}
+
+/*Quên mật khẩu*/
+.box_login3 {
+    border: 1px solid rgb(176, 176, 176);
+    margin: 5% 0;
+    width: 600px;
+    height: 230px;
+}
+
+.title_login a {
+    width: 100%;
+    height: 40px;
+}
+
+a .box_dangnhap3 {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px rgb(0, 123, 255) solid;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+}
+
+.formtaikhoan h3 {
+    text-align: left;
+    margin: 10px;
+}
+
+.button_submit3 {
+    margin-top: 10px;
+    display: flex;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    background: -webkit-linear-gradient(top, #fd6e1d, #f22726);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.thongbao {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}

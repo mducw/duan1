@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css?family=Nova+Slim&display=swap");
+
+body,
+html {
+    line-height: 1.8;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-weight: 400;
+    line-height: 1.5em;
+    
+}
+
+p {
+    font-size: 15px;
+    margin: 12px 0 0;
+    line-height: 24px;
+}
+
+a {
+    color: #333;
+    font-weight: 400;
+}
+
+button:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0px;
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local("Material Icons"), local("MaterialIcons-Regular"),
+        url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+        url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+        url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #000000;
+}
+.breadcrumb{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    margin-bottom: 30px;
+    background-color: #ffffff !important;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+}
+.w-20px{
+    width: 20px;
+}
+/*SIDEBAR*/
+#sidebar {
+    position: fixed;
+    height: 100vh !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    width: 260px;
+    overflow: auto;
+    transition: all 0.3s;
+    background: #ffffff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+#sidebar .sidebar-header {
+    padding: 23px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-header h3 {
+    color: #333;
+    font-size: 17px;
+    margin: 0px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    font-weight: 600;
+}
+
+.sidebar-header h3 img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+#sidebar ul li {
+    padding: 2px 7px;
+}
+
+#sidebar ul li.active > a {
+    color: #333;
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+#sidebar ul li a:hover {
+    color: #333;
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+#sidebar ul li.drodown {
+    position: sticky;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    line-height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    font-weight: 400;
+    display: block;
+}
+
+#sidebar ul li a span {
+    color: #000;
+    display: inline-block;
+}
+
+#sidebar ul li a i {
+    position: relative;
+    margin: 0 10px;
+    color: #000000;
+    width: 15px;
+}
+/* Content */
+#content {
+    position: relative;
+    transition: all 0.3s;
+    background-color: #ffffff;
+    margin-left: 260px;
+}
+
+.top-navbar {
+    width: 100%;
+    z-index: 9;
+    position: relative;
+}
+
+.main-content {
+    padding: 10px 20px 0px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar button {
+    background-color: transparent;
+    border: none;
+}
+.navbar button span {
+    color: #fff;
+}
+.navbar-nav > li.active {
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar .notification {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: block;
+    font-size: 9px;
+    border: 0px;
+    font-size: 10px;
+    background: #d9534f;
+    min-width: 15px;
+    text-align: center;
+    padding: 1px 5px;
+    height: 15px;
+    border-radius: 2px;
+    line-height: 14px;
+}
+
+.navbar-nav > li.show .dropdown-menu {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu li > a {
+    font-size: 13px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 2px;
+    font-weight: 400;
+    transition: all 150ms linear;
+}
+
+.navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.navbar-nav li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px !important;
+}
+
+.card {
+    margin: 10px 0;
+}
+
+.card {
+    border-radius: 0px !important;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    border: none !important;
+    width: 100%;
+    margin: 15px 0;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+}
+
+.card-stats .card-header {
+    float: left;
+    text-align: center;
+}
+
+.card .card-header {
+    padding: 15px 20px 0;
+    z-index: 3;
+    background-color: #fff !important;
+    border-bottom: none;
+}
+
+.card .card-footer .stats .material-icons {
+    position: relative;
+    top: 4px;
+    font-size: 16px;
+}
+
+.card-stats .card-header span {
+    font-size: 36px;
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+}
+
+.icon.icon-warning {
+    color: #ff9800;
+}
+
+.icon.icon-rose {
+    color: #e91e63;
+}
+.icon.icon-success {
+    color: #4caf50;
+}
+.icon.icon-info {
+    color: #00bcd4;
+}
+.card .card-footer {
+    margin: 0 7px 0px;
+    padding-top: 10px;
+    background-color: #fff;
+    border-top: 1px solid #eeeeee;
+}
+
+.text-info {
+    color: #03a9f4 !important;
+}
+
+.card-stats .card-content {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.card .card-content {
+    padding: 15px 20px;
+    position: relative;
+}
+
+.card .card-content .category {
+    margin-bottom: 0;
+}
+.card .category:not([class*="text-"]) {
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card .card-title:not(.card-calendar .card-title) {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card-stats .card-title {
+    margin: 0;
+}
+
+.card .card-footer .stats {
+    line-height: 22px;
+    color: #555555;
+    font-size: 15px;
+}
+
+.card .card-footer div {
+    display: inline-block;
+}
+
+.card .card-header-text h4 {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #222222;
+    text-decoration: none;
+}
+
+.table > thead > tr > th {
+    border-bottom-width: 1px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card .card-content {
+    padding: 15px 20px;
+    position: relative;
+}
+
+.streamline .sl-primary {
+    border-left-color: #188ae2;
+}
+
+.streamline .sl-item {
+    position: relative;
+    padding-bottom: 12px;
+    border-left: 1px solid #ccc;
+}
+
+.streamline .sl-item:before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 0;
+    background-color: #ccc;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+.streamline .sl-primary:before,
+.streamline .sl-primary:last-child:after {
+    background-color: #188ae2;
+}
+
+.streamline .sl-danger:before,
+.streamline .sl-danger:last-child:after {
+    background-color: #ff5b5b;
+}
+
+.streamline .sl-success {
+    border-left-color: #10c469;
+}
+
+.streamline .sl-success:before,
+.streamline .sl-success:last-child:after {
+    background-color: #10c469;
+}
+
+.streamline .sl-warning {
+    border-left-color: #f9c851;
+}
+
+.streamline .sl-warning:before,
+.streamline .sl-warning:last-child:after {
+    background-color: #f9c851;
+}
+
+.streamline .sl-danger {
+    border-left-color: #ff5b5b;
+}
+.streamline .sl-item .sl-content {
+    margin-left: 24px;
+}
+
+.streamline .sl-item .text-muted {
+    color: inherit;
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+.streamline .sl-item p {
+    font-size: 14px;
+    color: #333;
+}
+/* Custom file upload */
+label{
+    font-weight: 600;
+}
+.label-for-file{
+    color: #fff;
+    height: 31px;
+    width: 115px;
+    background-color: #007bff;
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,120 @@
+/* Font SF UI Text */
+@font-face {
+    font-family: "San Francisco Display";
+    src: url("../fonts/anFranciscoDisplay-Medium.woff2") format("woff2"),
+        url("./style.css/SanFranciscoDisplay-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "SF UI Text Regular";
+    src: url("https://db.onlinewebfonts.com/t/5ad142d0e49ca868b1530c30a47c625f.eot");
+    src: url("https://db.onlinewebfonts.com/t/5ad142d0e49ca868b1530c30a47c625f.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/5ad142d0e49ca868b1530c30a47c625f.woff2")
+            format("woff2"),
+        url("https://db.onlinewebfonts.com/t/5ad142d0e49ca868b1530c30a47c625f.woff")
+            format("woff"),
+        url("https://db.onlinewebfonts.com/t/5ad142d0e49ca868b1530c30a47c625f.ttf")
+            format("truetype"),
+        url("https://db.onlinewebfonts.com/t/5ad142d0e49ca868b1530c30a47c625f.svg#SF UI Text Regular")
+            format("svg");
+}
+.comment-session {
+    font-size: 14px;
+    font-family: "SF UI Text Regular", "San Francisco Display", sans-serif;
+}
+.post-comment .item-comment,
+.comment-box {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        
+}
+.comment-session {
+    height: auto;
+    margin: 0 auto;
+}
+.post-comment .item-comment {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.post-comment .item-comment .user {
+    display: flex;
+    padding: 8px;
+    overflow: hidden;
+}
+.post-comment .item-comment .user img {
+    height: 38px;
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.comment-session .name {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.post-comment .item-comment .day {
+    font-size: 12px;
+}
+.post-comment .comment-post {
+    padding: 0 15px 15px 58px;
+    line-height: 24px;
+}
+/* Box comment */
+.comment-box {
+    padding: 10px;
+    overflow: hidden;
+}
+.comment-box .user {
+    display: flex;
+    align-items: center;
+}
+.comment-box .image img {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    border-radius: 50%;
+    
+}
+.comment-box textarea {
+    background: #eee;
+    width: -webkit-fill-available;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    resize: inherit;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border: none;
+}
+.comment-box textarea:focus-visible {
+    box-shadow: inset 0 0 0 1px #009cff;
+    outline: none;
+}
+.comment-box .comment-submit {
+    float: right;
+    padding: 6px 10px;
+    border: none;
+    background-color: #009cff;
+    color: #eee;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.comment-box .comment-submit:hover {
+    background: #0076bf;
+}
+.no-comment {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 24px;
+}
+.no-login {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}

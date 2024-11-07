@@ -1,0 +1,36 @@
+
+.button-add-to-cart i {
+    color: #ff8144 !important;
+}
+
+.waiting-confirmation {
+    color: #f84926;
+}
+
+.processing {
+    color: #108ee9;
+}
+
+.shipping {
+    color: #f50;
+}
+
+.delivered {
+    color: #87d068;
+}
+
+.refuse,
+.canceled {
+    color: #ff3b3b;
+}
+
+.message-error {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 12px;
+    color: #ff3b3b;
+}
+.anh_dai_dien {
+    border: none;
+    border-radius: 50%;
+}
